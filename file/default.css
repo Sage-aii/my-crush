@@ -11,30 +11,30 @@ body {
 
     @media only screen and (max-width: 480px) {
         font-size: 12px; /* Adjust font size for smaller screens */
+        width: 100%; /* Make the body fit the entire screen */
     }
 }
-  a {
+a {
     color: white;
     font-size: 14px;
-  }
-  #main {
+}
+#main {
     width: 100%;
-  }
-  #wrap {
+}
+#wrap {
     position: relative;
     margin: 0 auto;
-    width: 1100px;
-    height: 680px;
+    width: 100%; /* Adjust the width to 100% for smaller screens */
+    height: auto; /* Remove fixed height */
     margin-top: 10px;
-  }
-  #text {
-    width: 272px;
-    height: 560px;
-    left: 188px;
-    top: 80px;
-    position: absolute;
-  }
-  #code {
+}
+#text {
+    width: 80%; /* Adjust the width to 80% for smaller screens */
+    height: auto; /* Remove fixed height */
+    left: 10%;
+    top: 20px;
+}
+#code {
     display: none;
     color: rgb(196, 255, 255);
     font-size: 16px;
@@ -42,50 +42,49 @@ body {
     line-height: 25px;
     font-size: larger;
     font-weight: bolder;
-  }
-  #clock-box {
+}
+#clock-box {
     position: absolute;
-    left: 60px;
-    top: 550px;
-    font-size: 28px;
+    left: 20px;
+    bottom: 20px; /* Move the clock to the bottom */
+    font-size: 20px;
     display: none;
-  }
-  #clock-box a {
-    font-size: 28px;
+}
+#clock-box a {
+    font-size: 20px;
     text-decoration: none;
-  }
-  #clock {
+}
+#clock {
     margin-left: 48px;
-  }
-  #clock .digit {
-    font-size: 64px;
-  }
-  #canvas {
+}
+#clock .digit {
+    font-size: 32px;
+}
+#canvas {
     margin: 0 auto;
-    width: 1100px;
-    height: 680px;
-  }
-  #error {
+    width: 100%; /* Adjust the width to 100% */
+    height: auto; /* Remove fixed height */
+}
+#error {
     margin: 0 auto;
     text-align: center;
     margin-top: 60px;
     display: none;
-  }
-  .hand {
+}
+.hand {
     cursor: pointer;
-  }
-  .say {
+}
+.say {
     margin-left: 5px;
     color: #FFB6C1; /* Medium pink */
 }
-  .space {
+.space {
     margin-right: 150px;
-  }
-  
-  #message-box{
+}
+
+#message-box {
     position: absolute;
-    margin-top:450px;
+    margin-top: 450px;
     font-size: 25px;
     font-family: monospace;
-  
-  }
+}
